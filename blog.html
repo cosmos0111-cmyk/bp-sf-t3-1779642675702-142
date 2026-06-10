@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 셔츠룸 블로그 | 성우이벤트 인사이트</title>
+    <meta name="description" content="마포 셔츠룸의 진짜 기준은 무엇인가? 성우이벤트가 말하는 프리미엄 셔츠룸의 핵심. 퍼포먼스와 공간의 완벽한 조화.">
+    <meta name="keywords" content="마포 셔츠룸, 성우이벤트, 마포 셔츠룸 추천, 셔츠룸 이벤트, 마포구 셔츠룸, 프리미엄 셔츠룸, 셔츠룸 블로그">
+    <link rel="canonical" href="https://sf-t3-1779642675702-142.vercel.app/blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="마포 셔츠룸 | 성우이벤트 - 당신이 알던 그곳은 없다">
+    <meta property="og:description" content="마포 셔츠룸의 기준을 다시 쓰다. 성우이벤트가 제안하는 프리미엄 셔츠룸, 강렬한 퍼포먼스와 완벽한 공간. 지금 경험하세요.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-142.vercel.app/blog">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #f5f5f5;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+        .logo span {
+            font-weight: 300;
+            color: #888;
+            -webkit-text-fill-color: #888;
+        }
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+            letter-spacing: 0.3px;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: #ffd700;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background: #0d0d0d;
+            padding: 24px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+            z-index: 999;
+        }
+        .mobile-menu a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            letter-spacing: 0.5px;
+        }
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+        .hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            padding-top: 120px;
+            padding-bottom: 60px;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at 70% 30%, rgba(255, 215, 0, 0.03), transparent 70%);
+            pointer-events: none;
+        }
+        .hero-content {
+            max-width: 800px;
+        }
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffd700;
+            margin-bottom: 24px;
+        }
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 64px);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+        }
+        .hero h1 span {
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #999;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+        .blog-article {
+            padding: 60px 0 100px;
+        }
+        .article-meta {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.08);
+        }
+        .article-meta span {
+            font-size: 14px;
+            color: #666;
+            letter-spacing: 0.5px;
+        }
+        .article-meta .highlight {
+            color: #ffd700;
+            font-weight: 600;
+        }
+        .article-content {
+            max-width: 800px;
+        }
+        .article-content h2 {
+            font-size: 28px;
+            font-weight: 800;
+            margin: 48px 0 20px;
+            letter-spacing: -0.5px;
+            color: #ffd700;
+        }
+        .article-content h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 36px 0 16px;
+            color: #eee;
+        }
+        .article-content p {
+            font-size: 17px;
+            color: #bbb;
+            margin-bottom: 20px;
+            line-height: 1.9;
+        }
+        .article-content .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 170, 0, 0.02));
+            border-left: 4px solid #ffd700;
+            padding: 28px 32px;
+            margin: 36px 0;
+            border-radius: 0 12px 12px 0;
+        }
+        .article-content .highlight-box p {
+            margin-bottom: 0;
+            color: #ddd;
+        }
+        .article-content .highlight-box strong {
+            color: #ffd700;
+        }
+        .article-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0 32px;
+        }
+        .article-content ul li {
+            padding: 14px 0 14px 28px;
+            position: relative;
+            color: #bbb;
+            font-size: 17px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+        .article-content ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+            font-weight: 700;
+        }
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(180deg, transparent, rgba(255, 215, 0, 0.03));
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+        .cta-section p {
+            color: #999;
+            font-size: 18px;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 18px 48px;
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            color: #0a0a0a;
+            font-size: 16px;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 30px rgba(255, 215, 0, 0.2);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 40px rgba(255, 215, 0, 0.35);
+        }
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 215, 0, 0.05);
+            text-align: center;
+            color: #555;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .mobile-menu.active {
+                display: block;
+            }
+            .hero {
+                min-height: auto;
+                padding-top: 100px;
+                padding-bottom: 40px;
+            }
+            .hero h1 {
+                font-size: 32px;
+                letter-spacing: -1px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .article-content h2 {
+                font-size: 24px;
+            }
+            .article-content p {
+                font-size: 16px;
+            }
+            .cta-section h2 {
+                font-size: 28px;
+            }
+            .cta-button {
+                padding: 16px 36px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">성우이벤트<span> | 마포</span></a>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/about">소개</a>
+                <a href="/services">서비스</a>
+                <a href="/blog">블로그</a>
+                <a href="/contact">문의</a>
+                <a href="tel:010-6279-0862" style="color:#ffd700;font-weight:700;">010-6279-0862</a>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/">홈</a>
+            <a href="/about">소개</a>
+            <a href="/services">서비스</a>
+            <a href="/blog">블로그</a>
+            <a href="/contact">문의</a>
+            <a href="tel:010-6279-0862" style="color:#ffd700;font-weight:700;">📞 010-6279-0862</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-badge">인사이트</div>
+            <h1>마포 셔츠룸, <span>가짜는 걸러라</span></h1>
+            <p>성우이벤트가 말하는 진짜 프리미엄의 기준. 퍼포먼스, 공간, 서비스 — 세 가지가 완벽해야 의미가 있다.</p>
+        </div>
+    </section>
+
+    <section class="blog-article">
+        <div class="container">
+            <div class="article-meta">
+                <span class="highlight">성우이벤트 편집장</span>
+                <span>|</span>
+                <span>2025년 3월 24일</span>
+                <span>|</span>
+                <span>6분 읽기</span>
+            </div>
+            <div class="article-content">
+                <p>솔직히 말할게. 마포 셔츠룸 시장, 너무 많이 떠들썩하다. 하루가 멀다 하고 새로운 곳이 생기고, 다들 "프리미엄"이라는 수식어를 갖다 붙인다. 근데 막상 가보면? 실망하는 경우가 태반이야. 조명만 어둡다고 프리미엄이 아니다. 가구만 비싸다고 끝이 아니다. 진짜는 따로 있어.</p>
+
+                <h2>퍼포먼스가 곧 정체성이다</h2>
+                <p>마포 셔츠룸에서 가장 중요한 건 뭘까? 많은 사람들이 공간이나 가격을 먼저 떠올리는데, 내 생각은 달라. 바로 <strong>퍼포먼스</strong>다. 셔츠룸의 본질은 경험에 있다. 단순히 술 마시고 노는 곳이 아니야. 강렬한 무대, 감각적인 연출, 그리고 그 순간을 함께하는 에너지 — 이게 진짜야.</p>
+                <p>성우이벤트는 이걸 완전히 다르게 접근한다. 우리는 퍼포먼스를 단순한 이벤트가 아니라 <strong>하나의 예술</strong>로 본다. 무대 위 아티스트들의 움직임 하나하나, 음악과 조명의 조화, 관객과의 호흡. 이 모든 게 하나로 어우러질 때 진짜 프리미엄이 완성된다.</p>
+
+                <div class="highlight-box">
+                    <p><strong>🔥 핵심 요약:</strong> 마포 셔츠룸에서 퍼포먼스를 무시하는 곳은 걸러라. 그건 겉만 번지르르한 가짜다. 진짜는 무대 위에서 증명된다.</p>
+                </div>
+
+                <h2>공간은 두 번째다 — 하지만 중요하다</h2>
+                <p>퍼포먼스가 1순위라면, 공간은 그걸 받쳐주는 플랫폼이어야 한다. 인테리어에 돈을 엄청 쏟아부었는데, 막상 앉아 있으면 불편하고 동선은 꼬이고? 그건 반쪽짜리야. 마포 셔츠룸에서 완벽한 공간이란 <strong>퍼포먼스를 극대화하는 환경</strong>을 의미한다.</p>
+                <p>성우이벤트의 공간은 처음부터 끝까지 퍼포먼스를 위해 설계됐다. 무대와 객석의 거리, 사운드 시스템의 배치, 조명의 각도 하나하나가 계산되어 있어. 여기 들어서는 순간, "아, 이건 다르다"는 걸 느끼게 될 거야.</p>
+
+                <h3>공간이 말해주는 것들</h3>
+                <ul>
+                    <li>무대와 객석의 최적 거리 — 퍼포먼스가 살아 숨 쉰다</li>
+                    <li>프리미엄 사운드 시스템 — 모든 음표가 선명하게</li>
+                    <li>지능형 조명 연출 — 분위기를 완전히 바꾼다</li>
+                    <li>프라이빗한 레이아웃 — 방해받지 않는 집중</li>
+                </ul>
+
+                <h2>서비스는 말이 아니라 행동이다</h2>
+                <p>마포 셔츠룸에서 서비스는 진짜 차이를 만든다. 많은 곳들이 "VIP 케어"
+</body>
+</html>

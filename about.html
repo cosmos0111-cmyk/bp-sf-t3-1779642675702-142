@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 셔츠룸 | 정보 – 성우이벤트가 밝히는 모든 것</title>
+    <meta name="description" content="마포 셔츠룸의 기준을 다시 쓰다. 성우이벤트가 제안하는 프리미엄 셔츠룸, 강렬한 퍼포먼스와 완벽한 공간. 지금 010-6279-0862로 경험하세요.">
+    <meta name="keywords" content="마포 셔츠룸, 성우이벤트, 마포 셔츠룸 추천, 셔츠룸 이벤트, 마포구 셔츠룸, 프리미엄 셔츠룸, 셔츠룸 가격, 마포 셔츠룸 후기">
+    <link rel="canonical" href="https://sf-t3-1779642675702-142.vercel.app/info">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="마포 셔츠룸 | 성우이벤트 - 당신이 알던 그곳은 없다">
+    <meta property="og:description" content="마포 셔츠룸의 기준을 다시 쓰다. 성우이벤트가 제안하는 프리미엄 셔츠룸, 강렬한 퍼포먼스와 완벽한 공간. 지금 경험하세요.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-142.vercel.app/info">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #0b0a0a;
+            color: #f5f2ed;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* 헤더 */
+        header {
+            background: #111010;
+            border-bottom: 1px solid #2a2725;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #f5f2ed;
+            text-decoration: none;
+        }
+        .logo span {
+            color: #c7a86b;
+        }
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        nav a {
+            color: #b1aba4;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+            letter-spacing: 0.3px;
+        }
+        nav a:hover {
+            color: #f5f2ed;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: #f5f2ed;
+            border-radius: 4px;
+        }
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background: #111010;
+            padding: 20px 24px;
+            border-top: 1px solid #2a2725;
+        }
+        .mobile-menu a {
+            color: #b1aba4;
+            text-decoration: none;
+            padding: 12px 0;
+            border-bottom: 1px solid #1f1d1b;
+            font-weight: 500;
+        }
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+        /* 히어로 */
+        .hero {
+            padding: 80px 0 60px;
+            border-bottom: 1px solid #2a2725;
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            max-width: 700px;
+        }
+        .hero h1 span {
+            color: #c7a86b;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: #b1aba4;
+            margin-top: 24px;
+            max-width: 600px;
+        }
+        /* 정보 섹션 */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px 30px;
+            padding: 70px 0;
+        }
+        .info-card {
+            background: #141212;
+            padding: 36px 28px;
+            border-radius: 18px;
+            border: 1px solid #2a2725;
+            transition: border 0.2s;
+        }
+        .info-card:hover {
+            border-color: #c7a86b40;
+        }
+        .info-card h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+        .info-card h3 i {
+            color: #c7a86b;
+            font-style: normal;
+        }
+        .info-card p {
+            color: #cbc4bc;
+            font-size: 0.98rem;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        .info-card .highlight {
+            color: #f5f2ed;
+            font-weight: 500;
+            background: #1f1d1b;
+            display: inline-block;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            letter-spacing: 0.3px;
+            margin-top: 8px;
+        }
+        .info-card .tel-badge {
+            color: #c7a86b;
+            font-weight: 600;
+        }
+        /* FAQ */
+        .faq-section {
+            padding: 60px 0 80px;
+            border-top: 1px solid #2a2725;
+        }
+        .faq-section h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #22201e;
+            padding: 22px 0;
+        }
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #f5f2ed;
+            cursor: default;
+        }
+        .faq-answer {
+            margin-top: 12px;
+            color: #b1aba4;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+        .faq-answer strong {
+            color: #c7a86b;
+        }
+        /* footer */
+        footer {
+            border-top: 1px solid #2a2725;
+            padding: 36px 0;
+            text-align: center;
+            color: #6b6560;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+        footer a {
+            color: #c7a86b;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            nav {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .mobile-menu.active {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+            .info-card {
+                padding: 28px 22px;
+            }
+            .faq-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+        /* tel link style */
+        a[href^="tel"] {
+            color: #c7a86b;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #c7a86b60;
+        }
+        a[href^="tel"]:hover {
+            border-bottom-style: solid;
+        }
+        /* small utilities */
+        .mt-2 {
+            margin-top: 0.5rem;
+        }
+        .text-gold {
+            color: #c7a86b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="/" class="logo">성우<span>이벤트</span></a>
+            <nav>
+                <a href="/">HOME</a>
+                <a href="/info">INFO</a>
+                <a href="/gallery">GALLERY</a>
+                <a href="tel:010-6279-0862">010-6279-0862</a>
+            </nav>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/">HOME</a>
+            <a href="/info">INFO</a>
+            <a href="/gallery">GALLERY</a>
+            <a href="tel:010-6279-0862">010-6279-0862</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>마포 셔츠룸<br><span>정보의 기준</span>을 다시 세운다</h1>
+            <p>뻔한 설명은 없다. 성우이벤트가 직접 밝히는 프리미엄 셔츠룸의 조건, 공간, 그리고 퍼포먼스. 마포에서 가장 강렬한 경험을 원한다면 반드시 알아야 할 것들.</p>
+        </section>
+
+        <section class="container info-grid">
+            <div class="info-card">
+                <h3><i>01</i> 공간의 격</h3>
+                <p>마포 셔츠룸은 무조건 넓다고 좋은 게 아니다. 성우이벤트는 사운드, 조명, 동선까지 계산된 프라이빗 룸을 제공한다. 모든 디테일이 퍼포먼스를 압도적으로 만든다.</p>
+                <span class="highlight">프리미엄 사운드 · 무대 조명</span>
+            </div>
+            <div class="info-card">
+                <h3><i>02</i> 퍼포먼스 DNA</h3>
+                <p>단순한 셔츠룸이 아니다. 매주 리허설과 안무가 업데이트되는 라이브 퍼포먼스. 게스트의 텐션을 읽고 즉흥으로 풀어내는 진짜 이벤트가 여기에 있다.</p>
+                <span class="highlight">매일 업그레이드되는 쇼</span>
+            </div>
+            <div class="info-card">
+                <h3><i>03</i> 가격, 투명하게</h3>
+                <p>“가격은 전화로만”은 이제 그만. 성우이벤트는 기본 시스템과 옵션을 명확히 공개한다. 합리적인 프리미엄, 숨은 비용은 없다. 마포 셔츠룸 가격, 이제 정직하게.</p>
+                <span class="highlight">1:1 맞춤 견적 · 추가 금액 없음</span>
+            </div>
+            <div class="info-card">
+                <h3><i>04</i> 지역 완전 정복</h3>
+                <p>마포구의 중심, 접근성 최상. 합정·홍대·상수 어디에서도 5분. 주차는 물론, 발렛까지 완벽 지원. 마포 셔츠룸 위치, 헤맬 필요 없게 만들었다.</p>
+                <span class="highlight">합정역 3번 출구 도보 2분</span>
+            </div>
+        </section>
+
+        <section class="faq-section container">
+            <h2>직접 묻는다, <span class="text-gold">성우이벤트</span></h2>
+            <div class="faq-item">
+                <div class="faq-question">마포 셔츠룸, 여긴 왜 다른가?</div>
+                <div class="faq-answer">90%의 셔츠룸이 비슷한 구성을 가졌다. 하지만 성우이벤트는 MC의 진행, 댄서의 퍼포먼스, 공간의 연출을 하나의 쇼로 엮는다. 단순한 자리 싸움이 아니다. <strong>강렬한 임팩트</strong>를 원한다면 정답은 여기.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">예약은 어떻게? 까다롭나?</div>
+                <div class="faq-answer">전화 한 통이면 끝. <a href="tel:010-6279-0862">010-6279-0862</a>로 바로 연결된다. 시간, 인원, 원하는 분위기만 말하면 나머지는 팀이 세팅한다. 번잡한 앱, 대기 없음. <strong>형식은 간결하게, 서비스는 완벽하게.</strong></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">가격대가 궁금하다. 부담되나?</div>
+                <div class="faq-answer">프리미엄 셔츠룸의 기준을 말하지만, 가격은 합리적인 라인을 유지한다. 기본 시스템 20만 원대부터, 옵션에 따라 유연하게 조정. <strong>마포 셔츠룸 추천</strong> 이유 중 하나가 바로 이 투명한 가격 정책이다. 전화로 시스템표를 요청하면 바로 보내준다.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">단체 회식, 접대도 가능한가?</div>
+                <div class="faq-answer">물론이다. 마포 셔츠룸 중에서도 넓은 규모와 프라이빗한 분위기를 자랑한다. 10인 이상 룸은 별도로 구성되며, VIP 서비스와 맞춤 이벤트가 포함된다. <strong>비즈니스 접대부터 친구 모임까지</strong> – 성우이벤트는 모든 규모를 커버한다.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">처음인데, 분위기 괜찮을까?</div>
+                <div class="faq-answer">첫 방문 고객이 가장 많다. 부담 갖지 마라. 입구부터 라운지까지 스탭이 안내하고, 원하는 텐션에 맞게 진행한다. <strong>처음이라는 이유로 서비스가 달라지지 않는다.</strong> 오히려 더 세심하게 챙긴다.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>성우이벤트 | 마포 셔츠룸 | 서울 마포구 합정동 프리미엄 존<br>
+            <a href="tel:010-6279-0862">010-6279-0862</a> &nbsp;·&nbsp; 운영 24시간 (사전 예약 필수)</p>
+            <p style="margin-top: 10px;">&copy; 성우이벤트. All rights reserved. 당신이 알던 그곳은 없다.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+        // close menu on link click (mobile)
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
